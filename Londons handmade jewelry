@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>London’s Handmade Jewelry</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink: #f7c4d4;
+      --dark-pink: #e88fb5;
+      --white: #fff;
+      --gray: #555;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--pink);
+      color: var(--gray);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--dark-pink);
+      color: var(--white);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    h2 {
+      color: var(--dark-pink);
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      border-bottom: 2px solid var(--dark-pink);
+      display: inline-block;
+    }
+
+    .about {
+      text-align: center;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .product {
+      background: var(--white);
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .product img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .product h3 {
+      color: var(--dark-pink);
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-form {
+      background-color: var(--white);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .contact-form button {
+      background-color: var(--dark-pink);
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: var(--dark-pink);
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>London’s Handmade Jewelry</h1>
+    <p>Shiny treasures made with love 💖</p>
+  </header>
+
+  <section class="about">
+    <h2>About Us</h2>
+    <p>Hi! I'm London and I love making beautiful jewelry by hand. Each piece is crafted with care and creativity. Whether you're looking for something sparkly or sweet, I’ve got a little treasure just for you!</p>
+  </section>
+
+  <section>
+    <h2>Featured Pieces</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200?text=Bracelet" alt="Bracelet">
+        <h3>Rose Quartz Bracelet</h3>
+        <p>Hand-strung with real rose quartz and love.</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200?text=Earrings" alt="Earrings">
+        <h3>Beaded Hoop Earrings</h3>
+        <p>Colorful, fun, and perfect for any outfit!</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/300x200?text=Necklace" alt="Necklace">
+        <h3>Charm Necklace</h3>
+        <p>Custom charms on a gold-plated chain — made just for you!</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="contact-form">
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+      <p style="margin-top: 1rem; font-size: 0.9rem;">*This is a placeholder form. Please update with your contact info!</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 London’s Handmade Jewelry. All rights reserved.</p>
+  </footer>
+</body>
+</html>
